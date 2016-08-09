@@ -1,4 +1,4 @@
-System.register(["angular2/core", 'app/products/product-list.component'], function(exports_1, context_1) {
+System.register(["angular2/core", 'app/products/product-list.component', 'app/products/product.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(["angular2/core", 'app/products/product-list.component'], functi
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, product_list_component_1;
+    var core_1, product_list_component_1, product_service_1;
     var AppComponent;
     return {
         setters:[
@@ -19,11 +19,14 @@ System.register(["angular2/core", 'app/products/product-list.component'], functi
             },
             function (product_list_component_1_1) {
                 product_list_component_1 = product_list_component_1_1;
+            },
+            function (product_service_1_1) {
+                product_service_1 = product_service_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
-                    this.pageTitle = "Welcome to PGMT";
+                    this.pageTitle = "UAE Student Mgmt";
                 }
                 AppComponent.prototype.getTitle = function () {
                 };
@@ -31,7 +34,8 @@ System.register(["angular2/core", 'app/products/product-list.component'], functi
                     core_1.Component({
                         selector: 'pm-app',
                         templateUrl: 'app/app.component.html',
-                        directives: [product_list_component_1.ProductListComponent]
+                        directives: [product_list_component_1.ProductListComponent],
+                        providers: [product_service_1.ProductService]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
