@@ -1,4 +1,6 @@
 import {Component} from "angular2/core";
+import {HTTP_PROVIDERS} from 'angular2/http';
+import 'rxjs/Rx'; 
 import {ProductListComponent} from 'app/products/product-list.component';
 import { ProductService } from 'app/products/product.service';
 
@@ -7,7 +9,7 @@ import { ProductService } from 'app/products/product.service';
     selector: 'pm-app',
     templateUrl: 'app/app.component.html',
     directives: [ProductListComponent],
-    providers: [ProductService]
+    providers: [ProductService, HTTP_PROVIDERS]
 })
 
 export class AppComponent {
