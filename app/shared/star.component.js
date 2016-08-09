@@ -27,6 +27,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 };
                 StarComponent.prototype.onClick = function () {
                     // this.notify.emit 
+                    // emit this text 
                     this.ratingClicked.emit("The rating " + this.rating + " was clicked!");
                 };
                 __decorate([
