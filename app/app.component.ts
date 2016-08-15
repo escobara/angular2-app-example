@@ -2,8 +2,8 @@ import {Component} from "angular2/core";
 import {HTTP_PROVIDERS} from 'angular2/http';
 import 'rxjs/Rx'; 
 import { ROUTER_PROVIDERS, RouteConfig, ROUTER_DIRECTIVES } from 'angular2/router';
-import {ProductListComponent} from 'app/products/product-list.component';
-import { ProductService } from 'app/products/product.service';
+import {ProductListComponent} from './products/product-list.component';
+import { ProductService } from './products/product.service';
 import { WelcomeComponent } from './home/welcome.component';
 import { ProductDetailComponent } from './products/product-detail.component';
 
@@ -11,7 +11,7 @@ import { ProductDetailComponent } from './products/product-detail.component';
 @Component({
     selector: 'pm-app',
     templateUrl: 'app/app.component.html',
-    directives: [ProductListComponent, ROUTER_DIRECTIVES],
+    directives: [ROUTER_DIRECTIVES],
     providers: [ProductService, HTTP_PROVIDERS, ROUTER_PROVIDERS]
 })
 // This will change to Routes : Name must have all caps 

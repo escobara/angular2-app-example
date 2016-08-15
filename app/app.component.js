@@ -1,4 +1,4 @@
-System.register(["angular2/core", 'angular2/http', 'rxjs/Rx', 'angular2/router', 'app/products/product-list.component', 'app/products/product.service', './home/welcome.component', './products/product-detail.component'], function(exports_1, context_1) {
+System.register(["angular2/core", 'angular2/http', 'rxjs/Rx', 'angular2/router', './products/product-list.component', './products/product.service', './home/welcome.component', './products/product-detail.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -45,7 +45,7 @@ System.register(["angular2/core", 'angular2/http', 'rxjs/Rx', 'angular2/router',
                     core_1.Component({
                         selector: 'pm-app',
                         templateUrl: 'app/app.component.html',
-                        directives: [product_list_component_1.ProductListComponent, router_1.ROUTER_DIRECTIVES],
+                        directives: [router_1.ROUTER_DIRECTIVES],
                         providers: [product_service_1.ProductService, http_1.HTTP_PROVIDERS, router_1.ROUTER_PROVIDERS]
                     }),
                     router_1.RouteConfig([
