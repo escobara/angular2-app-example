@@ -6,7 +6,7 @@ import { ProductService } from './product.service';
 import { StarComponent } from '../shared/star.component';
 
 @Component({
-    templateUrl: './product-detail.component.html'
+    templateUrl: 'app/products/product-detail.component.html'
 })
 
 export class ProductDetailComponent {

@@ -23,7 +23,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 }
                 ProductDetailComponent = __decorate([
                     core_1.Component({
-                        templateUrl: './product-detail.component.html'
+                        templateUrl: 'app/products/product-detail.component.html'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], ProductDetailComponent);
